@@ -1,0 +1,414 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+   button- 20230531
+   a - 20230601
+   vertical-align/img - 20230605
+*/
+@import url("https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap");
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+sub,
+sup,
+img {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+button {
+  background-color: transparent;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Bruno Ace SC", cursive, system-ui, -apple-system, "PingFang TC", "Segoe UI", "Microsoft JhengHei", "微軟正黑體", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color: #15161D;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1296px;
+  margin-inline: auto;
+}
+
+.bg-black {
+  background-color: #000;
+}
+
+a {
+  color: #FFF;
+}
+a:hover {
+  color: #00FFA3;
+}
+
+h2 {
+  font-size: 64px;
+}
+
+.imgBox {
+  overflow: hidden;
+}
+.imgBox img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: transform 0.6s ease-in-out;
+}
+.imgBox.hover:hover img {
+  transform: scale(1.2) translate(-4px, -6px);
+}
+.imgBox.hover2:hover img {
+  transform: translateY(-4px);
+}
+
+ul {
+  padding-top: 40px;
+  display: flex;
+  gap: 61px;
+}
+ul li:last-of-type {
+  width: 17.5%;
+  text-align: right;
+}
+ul li:not(last-of-type) {
+  width: 27.5%;
+}
+
+.kvBanner {
+  color: #FFF;
+  padding-block: 72px;
+}
+.kvBanner .container {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 24px;
+       column-gap: 24px;
+}
+.kvBanner .imgBox,
+.kvBanner .textBox {
+  width: 50%;
+}
+.kvBanner h1 {
+  font-size: 128px;
+  color: #00FFA3;
+  text-align: right;
+}
+
+.intro {
+  padding-block: 160px;
+  background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2023week2/background-img.png?raw=true");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #FFF;
+}
+.intro .container {
+  display: flex;
+  -moz-column-gap: 24px;
+       column-gap: 24px;
+}
+.intro .textBox {
+  width: 40%;
+}
+.intro p {
+  font-size: 24px;
+  margin-block: 36px 32px;
+}
+.intro .sparkleFlex {
+  display: flex;
+  -moz-column-gap: 16px;
+       column-gap: 16px;
+}
+.intro .sparkleFlex .imgBox {
+  width: 32px;
+}
+.intro .imgGrid {
+  width: 60%;
+  display: flex;
+  -moz-column-gap: 24px;
+       column-gap: 24px;
+}
+.intro .imgGrid .imgBox {
+  width: 28%;
+  height: 600px;
+}
+.intro .imgGrid .imgBox:last-of-type {
+  width: 44%;
+}
+.intro .imgGrid .imgBox img {
+  height: 100%;
+  width: auto;
+}
+
+.about {
+  padding-block: 160px;
+}
+.about .container {
+  display: flex;
+  -moz-column-gap: 10%;
+       column-gap: 10%;
+  align-items: center;
+}
+.about .gridCard {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+.about .card {
+  width: calc((100% - 24px) / 2);
+  padding: 16px;
+  border: 1px solid #E3E3E3;
+  box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  row-gap: 4px;
+}
+.about h4,
+.about h3 {
+  font-size: 20px;
+}
+.about h2 {
+  margin-bottom: 36px;
+}
+.about .me {
+  width: 40%;
+}
+.about .me p {
+  font-size: 24px;
+}
+
+.contact {
+  padding-block: 96px;
+  background: linear-gradient(180deg, #050014 0%, rgba(1, 2, 30, 0.89) 100%);
+}
+.contact .container {
+  display: flex;
+  -moz-column-gap: 8.7%;
+       column-gap: 8.7%;
+  align-items: center;
+}
+.contact .textBox {
+  width: 50.7%;
+  display: flex;
+  -moz-column-gap: 16px;
+       column-gap: 16px;
+  align-items: center;
+}
+.contact h2 {
+  color: #FFF;
+}
+.contact .imgGrid {
+  width: 40.6%;
+  display: flex;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  align-items: center;
+}
+
+.projects {
+  padding-block: 160px;
+}
+.projects h2 {
+  width: 57.6%;
+  margin-left: auto;
+}
+.projects .gridGroup {
+  margin-top: 16px;
+  display: flex;
+  -moz-column-gap: 24px;
+       column-gap: 24px;
+}
+.projects .mainPic {
+  width: 33%;
+}
+.projects .content {
+  width: 67%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px 24px;
+}
+.projects .card {
+  display: flex;
+  -moz-column-gap: 24px;
+       column-gap: 24px;
+  width: 100%;
+}
+.projects .card .imgBox {
+  width: 23.5%;
+}
+.projects .card .textBox {
+  width: 76.5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.projects .btn {
+  border-radius: 32px;
+  padding: 12px 24px;
+  display: flex;
+  align-items: center;
+  width: -moz-fit-content;
+  width: fit-content;
+  line-height: 1;
+}
+.projects .btn::after {
+  content: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2023week2/arrow_outward-white.png?raw=true");
+  margin-left: 4px;
+}
+.projects .app {
+  width: 35.75%;
+}
+.projects .web {
+  width: calc(64.25% - 24px);
+}
+
+footer {
+  text-align: center;
+  color: #FFF;
+  padding: 40px 312px;
+}
