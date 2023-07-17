@@ -160,7 +160,7 @@ a {
 }
 
 .red {
-  color: #AA0601;
+  color: #aa0601;
 }
 
 .darkRed {
@@ -168,11 +168,11 @@ a {
 }
 
 .white {
-  color: #FFF;
+  color: #fff;
 }
 
 .bg-red {
-  background-color: #AA0601;
+  background-color: #aa0601;
 }
 
 .bg-darkRed {
@@ -180,7 +180,7 @@ a {
 }
 
 .bg-pink {
-  background-color: #FBF2F2;
+  background-color: #fbf2f2;
 }
 
 body {
@@ -194,15 +194,15 @@ body {
 }
 
 a.dark-bg {
-  color: #FFF;
+  color: #fff;
 }
 a.dark-bg:hover {
-  color: #FBF2F2;
+  color: #fbf2f2;
   font-weight: bold;
   transform: translateY(-14px);
 }
 a.white-bg {
-  color: #AA0601;
+  color: #aa0601;
 }
 a.white-bg:hover {
   color: #650300;
@@ -215,15 +215,15 @@ a.white-bg:hover {
   width: fit-content;
   height: auto;
   overflow: hidden;
-  transition: transform 0.6s ease-in;
 }
 .imgBox img {
   width: 100%;
   height: auto;
   -o-object-fit: cover;
      object-fit: cover;
+  transition: transform 0.6s ease-in;
 }
-.imgBox.hover:hover {
+.imgBox.hover:hover img {
   transform: scale(1.2) translateY(-3px);
 }
 
@@ -411,6 +411,7 @@ header li {
   font-weight: bold;
   text-align: center;
   margin-top: 8px;
+  word-break: break-all;
 }
 .home .classic .gridGroup {
   margin-top: 48px;
@@ -418,6 +419,8 @@ header li {
 }
 .home .classic .card {
   width: calc((100% - 48px) / 3);
+  display: block;
+  cursor: pointer;
 }
 @media (max-width: 991.988px) {
   .home .classic .gridGroup {
@@ -429,9 +432,6 @@ header li {
   }
 }
 @media (max-width: 575.98px) {
-  .home .classic h3 {
-    word-break: break-all;
-  }
   .home .classic .gridGroup {
     margin-top: 24px;
   }

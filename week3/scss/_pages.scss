@@ -172,13 +172,17 @@ header {
     font-weight: bold;
     text-align: center;
     margin-top: 8px;
+    word-break: break-all;
   }
+
   .gridGroup {
     margin-top: 48px;
     gap: 24px;
   }
   .card {
     width: calc((100% - 48px) / 3);
+    display: block;
+    cursor: pointer;
   }
 
   @media (max-width: $breakPoint-pad) {
@@ -193,9 +197,6 @@ header {
   }
 
   @media (max-width: $breakPoint-mb) {
-    h3 {
-      word-break: break-all;
-    }
     .gridGroup {
       margin-top: 24px;
     }
