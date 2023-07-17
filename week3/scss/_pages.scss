@@ -1,0 +1,121 @@
+header {
+    padding-block: 16px;
+
+    .container {
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo {
+        width: 80px;
+    }
+
+    ul {
+        column-gap: 64px;
+        height: 100%;
+    }
+
+    li {
+        height: 100%;
+        display: inline-block;
+    }
+
+    @media (max-width:$breakPoint-pad) {
+        padding-block: 25px;
+    }
+
+    @media (max-width:$breakPoint-mb) {
+        padding-block: 12px 0px;
+
+        .container {
+            flex-direction: column;
+            max-width: 100%;
+            align-items: flex-start;
+            padding-inline: 0;
+        }
+
+        .imgBox {
+            margin-left: 14px;
+            margin-bottom: 12px;
+        }
+
+        ul {
+            width: 100%;
+            flex-wrap: wrap;
+            gap: 0;
+        }
+
+        li {
+            width: 50%;
+            text-align: center;
+            padding-block: 12px;
+            border: 1px solid #FFF;
+        }
+    }
+}
+
+.home .kvBanner {
+    background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header.png?raw=true');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 787px;
+    background-size: cover;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+        height: 100%;
+        padding-block: 25px;
+    }
+
+    h1 {
+        font-size: 64px;
+        font-weight: bold;
+    }
+
+    h2 {
+        font-size: 36px;
+    }
+
+    .btn {
+        margin-top: 4px;
+        padding: 6px 12px;
+        width: fit-content;
+        margin-left: auto;
+        font-size: 20px;
+        font-weight: 500;
+
+        &:hover {
+            transform: translateY(3px);
+            background-color: $darkRed;
+        }
+    }
+
+
+    @media (max-width:$breakPoint-pad) {}
+
+    @media (max-width:$breakPoint-mb) {
+        height: 396px;
+
+        h1 {
+            font-size: 24px;
+        }
+
+        h2 {
+            font-size: 16px;
+        }
+
+    }
+}
+
+.home .special {
+    h2 {
+        font-size: 48px;
+        text-align: center;
+        margin-bottom: 36px;
+        font-weight: bold;
+    }
+}

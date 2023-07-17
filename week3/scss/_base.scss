@@ -1,0 +1,94 @@
+//week 3 紅眼鏡首頁
+
+$red: #AA0601;
+$darkRed: #650300;
+$pink: #FBF2F2;
+
+.red {
+    color: $red;
+}
+
+.darkRed {
+    color: $darkRed;
+}
+
+.white {
+    color: #FFF;
+}
+
+
+.bg-red {
+    background-color: $red;
+}
+
+.bg-darkRed {
+    background-color: $darkRed;
+}
+
+.bg-pink {
+    background-color: $pink;
+}
+
+body {
+    font-family: 'Roboto', 'Noto Sans TC', system-ui, -apple-system, "PingFang TC", "Segoe UI", "Microsoft JhengHei", "微軟正黑體", "Helvetica Neue", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+
+
+
+//UI
+
+a {
+    &.dark-bg {
+        color: #FFF;
+
+        &:hover {
+            color: $pink;
+            font-weight: bold;
+            transform: translateY(-14px);
+        }
+    }
+
+    &.white-bg {
+        color: $red;
+
+        &:hover {
+            color: $darkRed;
+            font-weight: bold;
+            transform: translateY(-2px);
+        }
+    }
+
+}
+
+
+
+
+.imgBox {
+
+    width: fit-content;
+    height: auto;
+    overflow: hidden;
+    transition: transform 0.6s ease-in;
+
+    img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    &.hover:hover {
+        transform: scale(1.2) translateY(-3px);
+    }
+}

@@ -1,0 +1,358 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+   button- 20230531
+   a - 20230601
+   vertical-align/img - 20230605
+*/
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+sub,
+sup,
+img {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+button {
+  background-color: transparent;
+}
+
+a {
+  text-decoration: none;
+}
+
+.red {
+  color: #AA0601;
+}
+
+.darkRed {
+  color: #650300;
+}
+
+.white {
+  color: #FFF;
+}
+
+.bg-red {
+  background-color: #AA0601;
+}
+
+.bg-darkRed {
+  background-color: #650300;
+}
+
+.bg-pink {
+  background-color: #FBF2F2;
+}
+
+body {
+  font-family: "Roboto", "Noto Sans TC", system-ui, -apple-system, "PingFang TC", "Segoe UI", "Microsoft JhengHei", "微軟正黑體", "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a.dark-bg {
+  color: #FFF;
+}
+a.dark-bg:hover {
+  color: #FBF2F2;
+  font-weight: bold;
+  transform: translateY(-14px);
+}
+a.white-bg {
+  color: #AA0601;
+}
+a.white-bg:hover {
+  color: #650300;
+  font-weight: bold;
+  transform: translateY(-2px);
+}
+
+.imgBox {
+  width: -moz-fit-content;
+  width: fit-content;
+  height: auto;
+  overflow: hidden;
+  transition: transform 0.6s ease-in;
+}
+.imgBox img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.imgBox.hover:hover {
+  transform: scale(1.2) translateY(-3px);
+}
+
+.container {
+  max-width: 1260px;
+  padding-inline: 36px;
+  margin-inline: auto;
+}
+@media (max-width: 991.988px) {
+  .container {
+    max-width: 660px;
+  }
+}
+@media (max-width: 575.98px) {
+  .container {
+    padding-inline: 14px;
+  }
+}
+
+.flex {
+  display: flex;
+}
+
+.pdb-80 {
+  padding-block: 80px;
+}
+
+header {
+  padding-block: 16px;
+}
+header .container {
+  justify-content: space-between;
+  align-items: center;
+}
+header .logo {
+  width: 80px;
+}
+header ul {
+  -moz-column-gap: 64px;
+       column-gap: 64px;
+  height: 100%;
+}
+header li {
+  height: 100%;
+  display: inline-block;
+}
+@media (max-width: 991.988px) {
+  header {
+    padding-block: 25px;
+  }
+}
+@media (max-width: 575.98px) {
+  header {
+    padding-block: 12px 0px;
+  }
+  header .container {
+    flex-direction: column;
+    max-width: 100%;
+    align-items: flex-start;
+    padding-inline: 0;
+  }
+  header .imgBox {
+    margin-left: 14px;
+    margin-bottom: 12px;
+  }
+  header ul {
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 0;
+  }
+  header li {
+    width: 50%;
+    text-align: center;
+    padding-block: 12px;
+    border: 1px solid #FFF;
+  }
+}
+
+.home .kvBanner {
+  background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header.png?raw=true");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 787px;
+  background-size: cover;
+}
+.home .kvBanner .container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  height: 100%;
+  padding-block: 25px;
+}
+.home .kvBanner h1 {
+  font-size: 64px;
+  font-weight: bold;
+}
+.home .kvBanner h2 {
+  font-size: 36px;
+}
+.home .kvBanner .btn {
+  margin-top: 4px;
+  padding: 6px 12px;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-left: auto;
+  font-size: 20px;
+  font-weight: 500;
+}
+.home .kvBanner .btn:hover {
+  transform: translateY(3px);
+  background-color: #650300;
+}
+@media (max-width: 575.98px) {
+  .home .kvBanner {
+    height: 396px;
+  }
+  .home .kvBanner h1 {
+    font-size: 24px;
+  }
+  .home .kvBanner h2 {
+    font-size: 16px;
+  }
+}
+
+.home .special h2 {
+  font-size: 48px;
+  text-align: center;
+  margin-bottom: 36px;
+  font-weight: bold;
+}
