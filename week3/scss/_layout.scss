@@ -2,24 +2,26 @@ $breakPoint-mb: 575.98px;
 $breakPoint-pad: 991.988px;
 
 .container {
-    max-width: calc(1296px - 36px);
-    padding-inline: 36px;
-    margin-inline: auto;
+  max-width: calc(1296px + 72px);
+  padding-inline: 36px;
+  margin-inline: auto;
 
-    @media (max-width:$breakPoint-pad) {
-        max-width: calc(696px - 36px);
-    }
+  @media (max-width: $breakPoint-pad) {
+    max-width: calc(696px + 72px);
+  }
 
-    @media (max-width:$breakPoint-mb) {
-        padding-inline: 14px;
-    }
+  @media (max-width: $breakPoint-mb) {
+    padding-inline: 14px;
+  }
 }
-
 
 .flex {
-    display: flex;
+  display: flex;
 }
 
-.pdb-80 {
-    padding-block: 80px;
+.pdb-80-40m {
+  padding-block: 80px;
+  @media (max-width: $breakPoint-mb) {
+    padding-block: 40px;
+  }
 }

@@ -1,121 +1,206 @@
 header {
-    padding-block: 16px;
+  padding-block: 16px;
+
+  .container {
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    width: 80px;
+  }
+
+  ul {
+    column-gap: 64px;
+    height: 100%;
+  }
+
+  li {
+    height: 100%;
+    display: inline-block;
+  }
+
+  @media (max-width: $breakPoint-pad) {
+    padding-block: 25px;
+  }
+
+  @media (max-width: $breakPoint-mb) {
+    padding-block: 12px 0px;
 
     .container {
-        justify-content: space-between;
-        align-items: center;
+      flex-direction: column;
+      max-width: 100%;
+      align-items: flex-start;
+      padding-inline: 0;
     }
 
-    .logo {
-        width: 80px;
+    .imgBox {
+      margin-left: 14px;
+      margin-bottom: 12px;
     }
 
     ul {
-        column-gap: 64px;
-        height: 100%;
+      width: 100%;
+      flex-wrap: wrap;
+      gap: 0;
     }
 
     li {
-        height: 100%;
-        display: inline-block;
+      width: 50%;
+      text-align: center;
+      padding-block: 12px;
+      border: 1px solid #fff;
     }
+  }
+}
 
-    @media (max-width:$breakPoint-pad) {
-        padding-block: 25px;
+.home {
+  h2 {
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  @media (max-width: $breakPoint-mb) {
+    h2 {
+      font-size: 24px;
     }
-
-    @media (max-width:$breakPoint-mb) {
-        padding-block: 12px 0px;
-
-        .container {
-            flex-direction: column;
-            max-width: 100%;
-            align-items: flex-start;
-            padding-inline: 0;
-        }
-
-        .imgBox {
-            margin-left: 14px;
-            margin-bottom: 12px;
-        }
-
-        ul {
-            width: 100%;
-            flex-wrap: wrap;
-            gap: 0;
-        }
-
-        li {
-            width: 50%;
-            text-align: center;
-            padding-block: 12px;
-            border: 1px solid #FFF;
-        }
-    }
+  }
 }
 
 .home .kvBanner {
-    background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header.png?raw=true');
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 100%;
-    height: 787px;
-    background-size: cover;
+  background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header.png?raw=true");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 787px;
+  background-size: cover;
 
-    .container {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        justify-content: center;
-        height: 100%;
-        padding-block: 25px;
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    height: 100%;
+    padding-block: 25px;
+  }
+
+  h1 {
+    font-size: 64px;
+    font-weight: bold;
+  }
+
+  h2 {
+    font-size: 36px;
+  }
+
+  .btn {
+    margin-top: 4px;
+    padding: 6px 12px;
+    width: fit-content;
+    margin-left: auto;
+    font-size: 20px;
+    font-weight: 500;
+
+    &:hover {
+      transform: translateY(3px);
+      background-color: $darkRed;
     }
+  }
+
+  @media (max-width: $breakPoint-pad) {
+  }
+
+  @media (max-width: $breakPoint-mb) {
+    height: 396px;
 
     h1 {
-        font-size: 64px;
-        font-weight: bold;
+      font-size: 24px;
     }
 
     h2 {
-        font-size: 36px;
+      font-size: 16px;
     }
-
-    .btn {
-        margin-top: 4px;
-        padding: 6px 12px;
-        width: fit-content;
-        margin-left: auto;
-        font-size: 20px;
-        font-weight: 500;
-
-        &:hover {
-            transform: translateY(3px);
-            background-color: $darkRed;
-        }
-    }
-
-
-    @media (max-width:$breakPoint-pad) {}
-
-    @media (max-width:$breakPoint-mb) {
-        height: 396px;
-
-        h1 {
-            font-size: 24px;
-        }
-
-        h2 {
-            font-size: 16px;
-        }
-
-    }
+  }
 }
 
 .home .special {
-    h2 {
-        font-size: 48px;
-        text-align: center;
-        margin-bottom: 36px;
-        font-weight: bold;
+  .gridGruop {
+    column-gap: 24px;
+    margin-top: 32px;
+  }
+  .card {
+    width: calc((100% - 72px) / 4);
+    h3 {
+      font-size: 24px;
+      font-weight: bold;
+      text-align: center;
+      margin-block: 24px 8px;
     }
+    .imgBox {
+      width: 82px;
+      margin-inline: auto;
+    }
+  }
+
+  @media (max-width: $breakPoint-pad) {
+    .gridGruop {
+      gap: 36px 24px;
+      flex-wrap: wrap;
+    }
+    .card {
+      width: calc((100% - 24px) / 2);
+    }
+  }
+  @media (max-width: $breakPoint-mb) {
+    .gridGruop {
+      row-gap: 36px;
+    }
+    .card {
+      width: 100%;
+      h3 {
+        font-size: 24px;
+      }
+    }
+  }
+}
+
+.home .classic {
+  h3 {
+    font-size: 48px;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 8px;
+  }
+  .gridGroup {
+    margin-top: 48px;
+    gap: 24px;
+  }
+  .card {
+    width: calc((100% - 48px) / 3);
+  }
+
+  @media (max-width: $breakPoint-pad) {
+    .gridGroup {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .card {
+      width: 336px;
+    }
+  }
+
+  @media (max-width: $breakPoint-mb) {
+    h3 {
+      word-break: break-all;
+    }
+    .gridGroup {
+      margin-top: 24px;
+    }
+    .card {
+      width: 100%;
+    }
+  }
 }

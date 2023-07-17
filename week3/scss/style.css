@@ -228,13 +228,13 @@ a.white-bg:hover {
 }
 
 .container {
-  max-width: 1260px;
+  max-width: 1368px;
   padding-inline: 36px;
   margin-inline: auto;
 }
 @media (max-width: 991.988px) {
   .container {
-    max-width: 660px;
+    max-width: 768px;
   }
 }
 @media (max-width: 575.98px) {
@@ -247,8 +247,13 @@ a.white-bg:hover {
   display: flex;
 }
 
-.pdb-80 {
+.pdb-80-40m {
   padding-block: 80px;
+}
+@media (max-width: 575.98px) {
+  .pdb-80-40m {
+    padding-block: 40px;
+  }
 }
 
 header {
@@ -298,7 +303,18 @@ header li {
     width: 50%;
     text-align: center;
     padding-block: 12px;
-    border: 1px solid #FFF;
+    border: 1px solid #fff;
+  }
+}
+
+.home h2 {
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+}
+@media (max-width: 575.98px) {
+  .home h2 {
+    font-size: 24px;
   }
 }
 
@@ -350,9 +366,76 @@ header li {
   }
 }
 
-.home .special h2 {
-  font-size: 48px;
-  text-align: center;
-  margin-bottom: 36px;
-  font-weight: bold;
+.home .special .gridGruop {
+  -moz-column-gap: 24px;
+       column-gap: 24px;
+  margin-top: 32px;
 }
+.home .special .card {
+  width: calc((100% - 72px) / 4);
+}
+.home .special .card h3 {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-block: 24px 8px;
+}
+.home .special .card .imgBox {
+  width: 82px;
+  margin-inline: auto;
+}
+@media (max-width: 991.988px) {
+  .home .special .gridGruop {
+    gap: 36px 24px;
+    flex-wrap: wrap;
+  }
+  .home .special .card {
+    width: calc((100% - 24px) / 2);
+  }
+}
+@media (max-width: 575.98px) {
+  .home .special .gridGruop {
+    row-gap: 36px;
+  }
+  .home .special .card {
+    width: 100%;
+  }
+  .home .special .card h3 {
+    font-size: 24px;
+  }
+}
+
+.home .classic h3 {
+  font-size: 48px;
+  font-style: italic;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 8px;
+}
+.home .classic .gridGroup {
+  margin-top: 48px;
+  gap: 24px;
+}
+.home .classic .card {
+  width: calc((100% - 48px) / 3);
+}
+@media (max-width: 991.988px) {
+  .home .classic .gridGroup {
+    flex-direction: column;
+    align-items: center;
+  }
+  .home .classic .card {
+    width: 336px;
+  }
+}
+@media (max-width: 575.98px) {
+  .home .classic h3 {
+    word-break: break-all;
+  }
+  .home .classic .gridGroup {
+    margin-top: 24px;
+  }
+  .home .classic .card {
+    width: 100%;
+  }
+}/*# sourceMappingURL=style.css.map */
