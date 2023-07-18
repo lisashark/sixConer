@@ -221,6 +221,8 @@ a.white-bg:hover {
   height: auto;
   -o-object-fit: cover;
      object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
   transition: transform 0.6s ease-in;
 }
 .imgBox.hover:hover img {
@@ -440,6 +442,15 @@ header li {
   }
 }
 
+.home-cobranding {
+  background-image: url("https://picsum.photos/1200/500/?random=10");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.home-cobranding h2 {
+  margin-bottom: 48px;
+}
 .home-cobranding .card {
   display: block;
   width: 50%;
@@ -451,4 +462,104 @@ header li {
   font-weight: bold;
   font-style: italic;
   background-color: #fff;
+}
+@media (max-width: 991.988px) {
+  .home-cobranding .flex {
+    flex-direction: column;
+    row-gap: 24px;
+  }
+  .home-cobranding .card {
+    width: 100%;
+  }
+}
+@media (max-width: 575.98px) {
+  .home-cobranding h2 {
+    margin-bottom: 24px;
+  }
+}
+
+.home-recommand .flex {
+  margin-top: 48px;
+  gap: 24px;
+}
+.home-recommand .flex .card {
+  width: calc((100% - 72px) / 4);
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1607843137);
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+}
+.home-recommand .flex .imgBox {
+  height: 306px;
+  width: 100%;
+  border-radius: 4px 4px 0px 0px;
+}
+.home-recommand .flex .imgBox img {
+  height: 100%;
+}
+.home-recommand .flex .textBox {
+  padding: 16px;
+}
+.home-recommand .flex .name {
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+.home-recommand .flex .review {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  margin-bottom: 72px;
+  height: 48px;
+}
+.home-recommand .flex time {
+  font-size: 14px;
+  color: #707070;
+}
+@media (max-width: 991.988px) {
+  .home-recommand .flex {
+    flex-wrap: wrap;
+  }
+  .home-recommand .flex .card {
+    width: calc((100% - 24px) / 2);
+  }
+}
+@media (max-width: 575.98px) {
+  .home-recommand .flex {
+    margin-top: 24px;
+    row-gap: 16px;
+  }
+  .home-recommand .flex .card {
+    width: 100%;
+  }
+}
+
+.home-contact h2 {
+  margin-bottom: 48px;
+}
+.home-contact p {
+  margin-bottom: 24px;
+}
+.home-contact .container {
+  max-width: 708px;
+}
+.home-contact label {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+  margin-bottom: 16px;
+}
+.home-contact textarea,
+.home-contact input {
+  border: 1px solid #000000;
+  width: 100%;
+  padding: 6px 12px;
+}
+
+@media (max-width: 991.988px) {
+  h2 {
+    margin-bottom: 24px;
+  }
+  .container {
+    max-width: 648px;
+  }
 }/*# sourceMappingURL=style.css.map */

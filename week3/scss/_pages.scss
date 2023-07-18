@@ -108,7 +108,8 @@ header {
     }
   }
 
-  @media (max-width: $breakPoint-pad) {}
+  @media (max-width: $breakPoint-pad) {
+  }
 
   @media (max-width: $breakPoint-mb) {
     height: 396px;
@@ -215,6 +216,13 @@ header {
 }
 
 .home-cobranding {
+  background-image: url("https://picsum.photos/1200/500/?random=10");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  h2 {
+    margin-bottom: 48px;
+  }
 
   .card {
     display: block;
@@ -229,4 +237,114 @@ header {
     font-style: italic;
     background-color: #fff;
   }
+
+  @media (max-width: $breakPoint-pad) {
+    .flex {
+      flex-direction: column;
+      row-gap: 24px;
+    }
+    .card {
+      width: 100%;
+    }
+  }
+  @media (max-width: $breakPoint-mb) {
+    h2 {
+      margin-bottom: 24px;
+    }
+  }
 }
+
+.home-recommand {
+  .flex {
+    margin-top: 48px;
+    gap: 24px;
+    .card {
+      width: calc((100% - 72px) / 4);
+      box-shadow: 0px 2px 6px #00000029;
+      border: 1px solid #dee2e6;
+      border-radius: 4px;
+    }
+    .imgBox {
+      height: 306px;
+      width: 100%;
+      border-radius: 4px 4px 0px 0px;
+
+      img {
+        height: 100%;
+      }
+    }
+    .textBox {
+      padding: 16px;
+    }
+    .name {
+      margin-bottom: 8px;
+      font-weight: 600;
+    }
+    .review {
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+      overflow: hidden;
+      margin-bottom: 72px;
+      height: 48px;
+    }
+    time {
+      font-size: 14px;
+      color: #707070;
+    }
+  }
+
+  @media (max-width: $breakPoint-pad) {
+    .flex {
+      flex-wrap: wrap;
+      .card {
+        width: calc((100% - 24px) / 2);
+      }
+    }
+  }
+  @media (max-width: $breakPoint-mb) {
+    .flex {
+      margin-top: 24px;
+      row-gap: 16px;
+      .card {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.home-contact {
+  h2 {
+    margin-bottom: 48px;
+  }
+  p {
+    margin-bottom: 24px;
+  }
+  .container {
+    max-width: calc(636px + 72px);
+  }
+
+  label {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+    margin-bottom: 16px;
+  }
+
+  textarea,
+  input {
+    border: 1px solid #000000;
+    width: 100%;
+    // display: block;
+    padding: 6px 12px;
+  }
+}
+@media (max-width: $breakPoint-pad) {
+  h2 {
+    margin-bottom: 24px;
+  }
+  .container {
+    max-width: calc(576px + 72px);
+  }
+}
+//@media (max-width: $breakPoint-mb) {}
