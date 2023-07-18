@@ -307,18 +307,18 @@ header li {
   }
 }
 
-.home h2 {
+.page-home h2 {
   font-size: 48px;
   font-weight: bold;
   text-align: center;
 }
 @media (max-width: 575.98px) {
-  .home h2 {
+  .page-home h2 {
     font-size: 24px;
   }
 }
 
-.home .kvBanner {
+.home-kvBanner {
   background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header.png?raw=true");
   background-repeat: no-repeat;
   background-position: center;
@@ -326,7 +326,7 @@ header li {
   height: 787px;
   background-size: cover;
 }
-.home .kvBanner .container {
+.home-kvBanner .container {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -334,14 +334,14 @@ header li {
   height: 100%;
   padding-block: 25px;
 }
-.home .kvBanner h1 {
+.home-kvBanner h1 {
   font-size: 64px;
   font-weight: bold;
 }
-.home .kvBanner h2 {
+.home-kvBanner h2 {
   font-size: 36px;
 }
-.home .kvBanner .btn {
+.home-kvBanner .btn {
   margin-top: 4px;
   padding: 6px 12px;
   width: -moz-fit-content;
@@ -350,62 +350,62 @@ header li {
   font-size: 20px;
   font-weight: 500;
 }
-.home .kvBanner .btn:hover {
+.home-kvBanner .btn:hover {
   transform: translateY(3px);
   background-color: #650300;
 }
 @media (max-width: 575.98px) {
-  .home .kvBanner {
+  .home-kvBanner {
     height: 396px;
   }
-  .home .kvBanner h1 {
+  .home-kvBanner h1 {
     font-size: 24px;
   }
-  .home .kvBanner h2 {
+  .home-kvBanner h2 {
     font-size: 16px;
   }
 }
 
-.home .special .gridGruop {
+.home-special .gridGruop {
   -moz-column-gap: 24px;
        column-gap: 24px;
   margin-top: 32px;
 }
-.home .special .card {
+.home-special .card {
   width: calc((100% - 72px) / 4);
 }
-.home .special .card h3 {
+.home-special .card h3 {
   font-size: 24px;
   font-weight: bold;
   text-align: center;
   margin-block: 24px 8px;
 }
-.home .special .card .imgBox {
+.home-special .card .imgBox {
   width: 82px;
   margin-inline: auto;
 }
 @media (max-width: 991.988px) {
-  .home .special .gridGruop {
+  .home-special .gridGruop {
     gap: 36px 24px;
     flex-wrap: wrap;
   }
-  .home .special .card {
+  .home-special .card {
     width: calc((100% - 24px) / 2);
   }
 }
 @media (max-width: 575.98px) {
-  .home .special .gridGruop {
+  .home-special .gridGruop {
     row-gap: 36px;
   }
-  .home .special .card {
+  .home-special .card {
     width: 100%;
   }
-  .home .special .card h3 {
+  .home-special .card h3 {
     font-size: 24px;
   }
 }
 
-.home .classic h3 {
+.home-classic h3 {
   font-size: 48px;
   font-style: italic;
   font-weight: bold;
@@ -413,29 +413,42 @@ header li {
   margin-top: 8px;
   word-break: break-all;
 }
-.home .classic .gridGroup {
+.home-classic .gridGroup {
   margin-top: 48px;
   gap: 24px;
 }
-.home .classic .card {
+.home-classic .card {
   width: calc((100% - 48px) / 3);
   display: block;
   cursor: pointer;
 }
 @media (max-width: 991.988px) {
-  .home .classic .gridGroup {
+  .home-classic .gridGroup {
     flex-direction: column;
     align-items: center;
   }
-  .home .classic .card {
+  .home-classic .card {
     width: 336px;
   }
 }
 @media (max-width: 575.98px) {
-  .home .classic .gridGroup {
+  .home-classic .gridGroup {
     margin-top: 24px;
   }
-  .home .classic .card {
+  .home-classic .card {
     width: 100%;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+
+.home-cobranding .card {
+  display: block;
+  width: 50%;
+}
+.home-cobranding .textBox {
+  font-size: 48px;
+  text-align: center;
+  padding-block: 8px;
+  font-weight: bold;
+  font-style: italic;
+  background-color: #fff;
+}
