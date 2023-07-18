@@ -160,7 +160,7 @@ a {
 
 body {
   font-family: "Bruno Ace SC", cursive, system-ui, -apple-system, "PingFang TC", "Segoe UI", "Microsoft JhengHei", "微軟正黑體", Roboto, "Helvetica Neue", Arial, sans-serif;
-  color: #15161D;
+  color: #15161d;
   font-size: 16px;
   line-height: 1.5;
 }
@@ -179,10 +179,10 @@ body {
 }
 
 a {
-  color: #FFF;
+  color: #fff;
 }
 a:hover {
-  color: #00FFA3;
+  color: #00ffa3;
 }
 
 h2 {
@@ -220,7 +220,7 @@ ul li:not(last-of-type) {
 }
 
 .kvBanner {
-  color: #FFF;
+  color: #fff;
   padding-block: 72px;
 }
 .kvBanner .container {
@@ -235,7 +235,7 @@ ul li:not(last-of-type) {
 }
 .kvBanner h1 {
   font-size: 128px;
-  color: #00FFA3;
+  color: #00ffa3;
   text-align: right;
 }
 
@@ -244,7 +244,7 @@ ul li:not(last-of-type) {
   background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2023week2/background-img.png?raw=true");
   background-repeat: no-repeat;
   background-size: cover;
-  color: #FFF;
+  color: #fff;
 }
 .intro .container {
   display: flex;
@@ -302,7 +302,7 @@ ul li:not(last-of-type) {
 .about .card {
   width: calc((100% - 24px) / 2);
   padding: 16px;
-  border: 1px solid #E3E3E3;
+  border: 1px solid #e3e3e3;
   box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.08);
   display: flex;
   flex-direction: column;
@@ -340,7 +340,7 @@ ul li:not(last-of-type) {
   align-items: center;
 }
 .contact h2 {
-  color: #FFF;
+  color: #fff;
 }
 .contact .imgGrid {
   width: 40.6%;
@@ -348,6 +348,9 @@ ul li:not(last-of-type) {
   -moz-column-gap: 20px;
        column-gap: 20px;
   align-items: center;
+}
+.contact .imgGrid .imgBox {
+  width: calc((100% - 40px) / 3);
 }
 
 .projects {
@@ -409,6 +412,6 @@ ul li:not(last-of-type) {
 
 footer {
   text-align: center;
-  color: #FFF;
+  color: #fff;
   padding: 40px 312px;
-}
+}/*# sourceMappingURL=style.css.map */
