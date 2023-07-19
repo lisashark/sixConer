@@ -108,8 +108,7 @@ header {
     }
   }
 
-  @media (max-width: $breakPoint-pad) {
-  }
+  @media (max-width: $breakPoint-pad) {}
 
   @media (max-width: $breakPoint-mb) {
     height: 396px;
@@ -220,6 +219,7 @@ header {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+
   h2 {
     margin-bottom: 48px;
   }
@@ -243,10 +243,12 @@ header {
       flex-direction: column;
       row-gap: 24px;
     }
+
     .card {
       width: 100%;
     }
   }
+
   @media (max-width: $breakPoint-mb) {
     h2 {
       margin-bottom: 24px;
@@ -258,12 +260,14 @@ header {
   .flex {
     margin-top: 48px;
     gap: 24px;
+
     .card {
       width: calc((100% - 72px) / 4);
       box-shadow: 0px 2px 6px #00000029;
       border: 1px solid #dee2e6;
       border-radius: 4px;
     }
+
     .imgBox {
       height: 306px;
       width: 100%;
@@ -273,13 +277,16 @@ header {
         height: 100%;
       }
     }
+
     .textBox {
       padding: 16px;
     }
+
     .name {
       margin-bottom: 8px;
       font-weight: 600;
     }
+
     .review {
       display: -webkit-box;
       -webkit-box-orient: vertical;
@@ -288,6 +295,7 @@ header {
       margin-bottom: 72px;
       height: 48px;
     }
+
     time {
       font-size: 14px;
       color: #707070;
@@ -297,15 +305,18 @@ header {
   @media (max-width: $breakPoint-pad) {
     .flex {
       flex-wrap: wrap;
+
       .card {
         width: calc((100% - 24px) / 2);
       }
     }
   }
+
   @media (max-width: $breakPoint-mb) {
     .flex {
       margin-top: 24px;
       row-gap: 16px;
+
       .card {
         width: 100%;
       }
@@ -317,9 +328,12 @@ header {
   h2 {
     margin-bottom: 48px;
   }
+
   p {
     margin-bottom: 24px;
+    font-size: 20px;
   }
+
   .container {
     max-width: calc(636px + 72px);
   }
@@ -335,16 +349,145 @@ header {
   input {
     border: 1px solid #000000;
     width: 100%;
-    // display: block;
     padding: 6px 12px;
   }
-}
-@media (max-width: $breakPoint-pad) {
-  h2 {
-    margin-bottom: 24px;
+
+  input::placeholder,
+  textarea::placeholder {
+    color: rgba(0, 0, 0, 0.2);
   }
-  .container {
-    max-width: calc(576px + 72px);
+
+  input:focus,
+  textarea:focus {
+    outline: 1px solid $red;
+  }
+
+  textarea {
+    height: 136px;
+  }
+
+  label:nth-child(5) {
+    flex-direction: row;
+    align-items: flex-start;
+
+    input {
+      order: -1;
+      width: initial;
+      margin-right: 4px;
+    }
+  }
+
+  button {
+    width: 416px;
+    padding-block: 16px;
+    margin-inline: auto;
+    margin-top: 32px;
+  }
+
+  @media (max-width: $breakPoint-pad) {
+    h2 {
+      margin-bottom: 24px;
+    }
+
+    .container {
+      max-width: calc(576px + 72px);
+    }
+
+    button {
+      width: 336px;
+    }
+  }
+
+  @media (max-width: $breakPoint-mb) {
+    button {
+      width: 100%;
+      margin-top: 8px;
+    }
   }
 }
-//@media (max-width: $breakPoint-mb) {}
+
+footer {
+  padding-block: 48px 32px;
+
+  .upperFooter {
+    justify-content: space-between;
+    align-items: center;
+
+  }
+
+  ul {
+    column-gap: 48px;
+    margin-bottom: 44px;
+
+    &~a {
+      font-size: 36px;
+
+      .material-symbols-rounded {
+        font-size: 36px;
+        vertical-align: middle;
+        margin-right: 20px;
+      }
+    }
+  }
+
+  .linkGroup a:last-of-type {
+    margin-top: 8px;
+
+    .material-symbols-rounded {
+      margin-right: 12px;
+    }
+  }
+
+  .imgGrid {
+    column-gap: 32px;
+
+    .imgBox {
+      width: 48px;
+    }
+  }
+
+  @media (max-width: $breakPoint-pad) {
+    padding-bottom: 40px;
+
+    ul {
+      margin-bottom: 40px;
+    }
+
+    .imgGrid {
+      column-gap: 16px;
+
+      .imgBox {
+        width: 40px;
+      }
+    }
+  }
+
+  @media (max-width: $breakPoint-mb) {
+    padding-block: 24px;
+
+    .upperFooter {
+      justify-content: flex-end;
+
+      ul {
+        display: none;
+      }
+
+      &~a {
+        font-size: 16px;
+
+        .material-symbols-rounded {
+          font-size: 16px;
+          margin-right: 10px;
+        }
+      }
+    }
+
+    .imgGrid {
+      column-gap: 8px;
+
+      .imgBox {
+        width: 24px;
+      }
+    }
+  }
+}
