@@ -410,32 +410,16 @@ footer {
   padding-block: 48px 32px;
 
   .upperFooter {
+    flex-direction: column;
+  }
+
+  .linkGroup {
     justify-content: space-between;
     align-items: center;
-
   }
 
   ul {
     column-gap: 48px;
-    margin-bottom: 44px;
-
-    &~a {
-      font-size: 36px;
-
-      .material-symbols-rounded {
-        font-size: 36px;
-        vertical-align: middle;
-        margin-right: 20px;
-      }
-    }
-  }
-
-  .linkGroup a:last-of-type {
-    margin-top: 8px;
-
-    .material-symbols-rounded {
-      margin-right: 12px;
-    }
   }
 
   .imgGrid {
@@ -446,12 +430,34 @@ footer {
     }
   }
 
+  .contactBtn {
+    font-size: 36px;
+    margin-top: 44px;
+
+    .material-symbols-rounded {
+      font-size: 36px;
+      vertical-align: middle;
+      margin-right: 20px;
+    }
+  }
+
+  .contactBtn:last-of-type {
+    margin-top: 8px;
+
+    .material-symbols-rounded {
+      margin-right: 12px;
+    }
+  }
+
+  .bottomFooter {
+    padding-inline: 32px;
+    border-top: 1px solid #FFF;
+  }
+
+
+
   @media (max-width: $breakPoint-pad) {
     padding-bottom: 40px;
-
-    ul {
-      margin-bottom: 40px;
-    }
 
     .imgGrid {
       column-gap: 16px;
@@ -460,6 +466,11 @@ footer {
         width: 40px;
       }
     }
+
+    .contactBtn {
+      margin-top: 40px;
+    }
+
   }
 
   @media (max-width: $breakPoint-mb) {
@@ -471,16 +482,17 @@ footer {
       ul {
         display: none;
       }
+    }
 
-      &~a {
+    .contactBtn {
+      font-size: 16px;
+
+      .material-symbols-rounded {
         font-size: 16px;
-
-        .material-symbols-rounded {
-          font-size: 16px;
-          margin-right: 10px;
-        }
+        margin-right: 10px;
       }
     }
+
 
     .imgGrid {
       column-gap: 8px;
