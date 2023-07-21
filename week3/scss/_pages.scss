@@ -108,7 +108,8 @@ header {
     }
   }
 
-  @media (max-width: $breakPoint-pad) {}
+  @media (max-width: $breakPoint-pad) {
+  }
 
   @media (max-width: $breakPoint-mb) {
     height: 396px;
@@ -407,7 +408,7 @@ header {
 }
 
 footer {
-  padding-block: 48px 32px;
+  padding-top: 48px;
 
   .upperFooter {
     flex-direction: column;
@@ -450,14 +451,18 @@ footer {
   }
 
   .bottomFooter {
-    padding-inline: 32px;
-    border-top: 1px solid #FFF;
+    margin-top: 32px;
+    padding-block: 32px;
+    border-top: 1px solid #fff;
+    justify-content: space-between;
   }
 
-
+  .privacy {
+    margin-right: 48px;
+  }
 
   @media (max-width: $breakPoint-pad) {
-    padding-bottom: 40px;
+    padding-top: 40px;
 
     .imgGrid {
       column-gap: 16px;
@@ -470,14 +475,15 @@ footer {
     .contactBtn {
       margin-top: 40px;
     }
-
   }
 
   @media (max-width: $breakPoint-mb) {
-    padding-block: 24px;
+    padding-top: 24px;
 
     .upperFooter {
-      justify-content: flex-end;
+      justify-content: space-between;
+      flex-direction: row-reverse;
+      align-items: flex-start;
 
       ul {
         display: none;
@@ -485,7 +491,12 @@ footer {
     }
 
     .contactBtn {
+      margin-top: 8px;
       font-size: 16px;
+
+      &:first-of-type {
+        margin-top: 0;
+      }
 
       .material-symbols-rounded {
         font-size: 16px;
@@ -493,13 +504,21 @@ footer {
       }
     }
 
-
     .imgGrid {
       column-gap: 8px;
 
       .imgBox {
         width: 24px;
       }
+    }
+    .bottomFooter {
+      margin-top: 20px;
+      flex-direction: column;
+      padding-block: 20px;
+    }
+    .privacy {
+      display: block;
+      margin-block: 8px;
     }
   }
 }
