@@ -225,7 +225,8 @@ a.white-bg:hover {
      object-position: center;
   transition: transform 0.6s ease-in;
 }
-.imgBox.hover:hover img {
+.imgBox.hover:hover img,
+.imgBox.hover:hover source {
   transform: scale(1.2) translateY(-3px);
 }
 

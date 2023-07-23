@@ -78,7 +78,9 @@ a {
   }
 
   &.hover:hover {
-    img {
+
+    img,
+    source {
       transform: scale(1.2) translateY(-3px);
     }
   }
