@@ -108,9 +108,6 @@ header {
     }
   }
 
-  @media (max-width: $breakPoint-pad) {
-  }
-
   @media (max-width: $breakPoint-mb) {
     height: 396px;
 
@@ -154,6 +151,12 @@ header {
 
     .card {
       width: calc((100% - 24px) / 2);
+
+      p {
+        width: 100%;
+        max-width: 400px;
+        margin-inline: auto;
+      }
     }
   }
 
@@ -211,12 +214,13 @@ header {
 
     .card {
       width: 100%;
+      max-width: 348px;
     }
   }
 }
 
 .home-cobranding {
-  background-image: url("https://picsum.photos/1200/500/?random=10");
+  background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg.png?raw=true");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -230,6 +234,19 @@ header {
     width: 50%;
   }
 
+  picture {
+    height: 240px;
+    display: block;
+    width: 100%;
+
+    source,
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
   .textBox {
     font-size: 48px;
     text-align: center;
@@ -240,6 +257,9 @@ header {
   }
 
   @media (max-width: $breakPoint-pad) {
+    background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg-sm.png?raw=true");
+    background-position: top;
+
     .flex {
       flex-direction: column;
       row-gap: 24px;
@@ -383,6 +403,12 @@ header {
     padding-block: 16px;
     margin-inline: auto;
     margin-top: 32px;
+    cursor: pointer;
+
+    &:hover {
+      transform: translateY(3px);
+      background-color: $darkRed;
+    }
   }
 
   @media (max-width: $breakPoint-pad) {
@@ -428,6 +454,10 @@ footer {
 
     .imgBox {
       width: 48px;
+
+      &:hover {
+        transform: translateY(-2px);
+      }
     }
   }
 
@@ -511,11 +541,13 @@ footer {
         width: 24px;
       }
     }
+
     .bottomFooter {
       margin-top: 20px;
       flex-direction: column;
       padding-block: 20px;
     }
+
     .privacy {
       display: block;
       margin-block: 8px;

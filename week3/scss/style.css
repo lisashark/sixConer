@@ -239,7 +239,7 @@ a.white-bg:hover {
     max-width: 768px;
   }
 }
-@media (max-width: 575.98px) {
+@media (max-width: 767.98px) {
   .container {
     padding-inline: 14px;
   }
@@ -256,7 +256,7 @@ a.white-bg:hover {
 .pdb-80-40m {
   padding-block: 80px;
 }
-@media (max-width: 575.98px) {
+@media (max-width: 767.98px) {
   .pdb-80-40m {
     padding-block: 40px;
   }
@@ -286,7 +286,7 @@ header li {
     padding-block: 25px;
   }
 }
-@media (max-width: 575.98px) {
+@media (max-width: 767.98px) {
   header {
     padding-block: 12px 0px;
   }
@@ -318,7 +318,7 @@ header li {
   font-weight: bold;
   text-align: center;
 }
-@media (max-width: 575.98px) {
+@media (max-width: 767.98px) {
   .page-home h2 {
     font-size: 24px;
   }
@@ -360,7 +360,7 @@ header li {
   transform: translateY(3px);
   background-color: #650300;
 }
-@media (max-width: 575.98px) {
+@media (max-width: 767.98px) {
   .home-kvBanner {
     height: 396px;
   }
@@ -398,8 +398,13 @@ header li {
   .home-special .card {
     width: calc((100% - 24px) / 2);
   }
+  .home-special .card p {
+    width: 100%;
+    max-width: 400px;
+    margin-inline: auto;
+  }
 }
-@media (max-width: 575.98px) {
+@media (max-width: 767.98px) {
   .home-special .gridGruop {
     row-gap: 36px;
   }
@@ -437,17 +442,18 @@ header li {
     width: 336px;
   }
 }
-@media (max-width: 575.98px) {
+@media (max-width: 767.98px) {
   .home-classic .gridGroup {
     margin-top: 24px;
   }
   .home-classic .card {
     width: 100%;
+    max-width: 348px;
   }
 }
 
 .home-cobranding {
-  background-image: url("https://picsum.photos/1200/500/?random=10");
+  background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg.png?raw=true");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -459,6 +465,18 @@ header li {
   display: block;
   width: 50%;
 }
+.home-cobranding picture {
+  height: 240px;
+  display: block;
+  width: 100%;
+}
+.home-cobranding picture source,
+.home-cobranding picture img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 .home-cobranding .textBox {
   font-size: 48px;
   text-align: center;
@@ -468,6 +486,10 @@ header li {
   background-color: #fff;
 }
 @media (max-width: 991.988px) {
+  .home-cobranding {
+    background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg-sm.png?raw=true");
+    background-position: top;
+  }
   .home-cobranding .flex {
     flex-direction: column;
     row-gap: 24px;
@@ -476,7 +498,7 @@ header li {
     width: 100%;
   }
 }
-@media (max-width: 575.98px) {
+@media (max-width: 767.98px) {
   .home-cobranding h2 {
     margin-bottom: 24px;
   }
@@ -527,7 +549,7 @@ header li {
     width: calc((100% - 24px) / 2);
   }
 }
-@media (max-width: 575.98px) {
+@media (max-width: 767.98px) {
   .home-recommand .flex {
     margin-top: 24px;
     row-gap: 16px;
@@ -587,6 +609,11 @@ header li {
   padding-block: 16px;
   margin-inline: auto;
   margin-top: 32px;
+  cursor: pointer;
+}
+.home-contact button:hover {
+  transform: translateY(3px);
+  background-color: #650300;
 }
 @media (max-width: 991.988px) {
   .home-contact h2 {
@@ -599,7 +626,7 @@ header li {
     width: 336px;
   }
 }
-@media (max-width: 575.98px) {
+@media (max-width: 767.98px) {
   .home-contact button {
     width: 100%;
     margin-top: 8px;
@@ -626,6 +653,9 @@ footer .imgGrid {
 }
 footer .imgGrid .imgBox {
   width: 48px;
+}
+footer .imgGrid .imgBox:hover {
+  transform: translateY(-2px);
 }
 footer .contactBtn {
   font-size: 36px;
@@ -666,7 +696,7 @@ footer .privacy {
     margin-top: 40px;
   }
 }
-@media (max-width: 575.98px) {
+@media (max-width: 767.98px) {
   footer {
     padding-top: 24px;
   }

@@ -1,4 +1,4 @@
-$breakPoint-mb: 575.98px;
+$breakPoint-mb: 767.98px;
 $breakPoint-pad: 991.988px;
 
 .container {
@@ -19,12 +19,13 @@ $breakPoint-pad: 991.988px;
   display: flex;
 }
 
-.block{
+.block {
   display: block;
 }
 
 .pdb-80-40m {
   padding-block: 80px;
+
   @media (max-width: $breakPoint-mb) {
     padding-block: 40px;
   }
