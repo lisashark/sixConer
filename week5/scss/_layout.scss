@@ -1,0 +1,20 @@
+.all {
+    margin: 0;
+
+    .col:first-child {
+        max-width: 296px;
+        width: 296px;
+        min-height: 100vh;
+        background-color: var(--bs-gray-100);
+        padding-block: var(--bs-gutter-y);
+    }
+
+    .material-symbols-rounded {
+        font-size: 24px;
+    }
+
+    .menuBox {
+        font-size: 16px;
+        font-weight: bold;
+    }
+}

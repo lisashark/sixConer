@@ -1,0 +1,10 @@
+//BS5 修改
+:root {
+    --bs-body-font-family: 'Lato', 'Roboto Mono', sans-serif, monospace;
+    --bs-body-font-size: 14px;
+}
+
+.row {
+    --bs-gutter-x: 64px;
+    --bs-gutter-y: 32px;
+}
