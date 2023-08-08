@@ -6,7 +6,7 @@
 }
 
 .row {
-  --bs-gutter-x: 64px;
+  --bs-gutter-x: 32px;
   --bs-gutter-y: 32px;
 }
 
@@ -14,20 +14,30 @@
   font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 48;
 }
 
-.all {
-  margin: 0;
+a {
+  color: var(--bs-gray-900);
+  text-decoration: none;
 }
-.all .col:first-child {
+a:hover {
+  color: var(--bs-success);
+}
+
+.nav {
   max-width: 296px;
   width: 296px;
   min-height: 100vh;
   background-color: var(--bs-gray-100);
-  padding-block: var(--bs-gutter-y);
+  padding: 32px;
 }
-.all .material-symbols-rounded {
+.nav .material-symbols-rounded {
   font-size: 24px;
 }
-.all .menuBox {
+.nav .logo {
+  margin-bottom: 4px;
+}
+.nav .menuBox {
   font-size: 16px;
   font-weight: bold;
-}
+  gap: 16px;
+  margin-block: 28px;
+}/*# sourceMappingURL=style.css.map */
