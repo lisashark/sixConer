@@ -22,22 +22,22 @@ a:hover {
   color: var(--bs-success);
 }
 
-.nav {
+.navBar {
   max-width: 296px;
   width: 296px;
   min-height: 100vh;
   background-color: var(--bs-gray-100);
   padding: 32px;
 }
-.nav .material-symbols-rounded {
+.navBar .material-symbols-rounded {
   font-size: 24px;
 }
-.nav .logo {
+.navBar .logo {
   margin-bottom: 4px;
 }
-.nav .menuBox {
+.navBar .menuBox {
   font-size: 16px;
   font-weight: bold;
   gap: 16px;
   margin-block: 28px;
-}/*# sourceMappingURL=style.css.map */
+}
