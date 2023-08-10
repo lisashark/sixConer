@@ -1,7 +1,39 @@
+//font size
+.fs-1 {
+    font-size: 24px !important;
+}
+
+.fs-2 {
+    font-size: 20px !important;
+}
+
+.fs-3 {
+    font-size: 16px !important;
+}
+
+.fs-4 {
+    font-size: 14px !important;
+}
+
+.fs-5 {
+    font-size: 12px !important;
+}
+
+
+//spacing
+
 .mx-main {
-    margin-inline: $padding;
+    margin-inline: $spacing;
 }
 
 .my-main {
-    margin-block: $padding;
+    margin-block: $spacing;
+}
+
+.px-main {
+    padding-inline: $spacing;
+}
+
+.py-main {
+    padding-block: $spacing;
 }

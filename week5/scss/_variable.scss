@@ -1,7 +1,7 @@
 //BS5 修改
 :root {
     --bs-body-font-family: 'Lato', 'Roboto Mono', sans-serif, monospace;
-    --bs-body-font-size: 14px;
+    --bs-body-font-size: 16px;
 }
 
 .row {
@@ -9,4 +9,11 @@
     --bs-gutter-y: 32px;
 }
 
-$padding: 32px;
+
+p {
+    margin-bottom: 0px;
+}
+
+$color_main: var(--bs-success);
+
+$spacing: 32px;
