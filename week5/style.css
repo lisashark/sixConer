@@ -97,8 +97,17 @@ a:hover {
   margin-block: 28px;
 }
 .navArea li > .d-block.active {
-  border-left: 4px solid var(--bs-success);
+  position: relative;
   color: var(--bs-success);
+}
+.navArea li > .d-block.active ::before {
+  content: "";
+  width: 4px;
+  height: 32px;
+  background-color: var(--bs-success);
+  position: absolute;
+  left: 0;
+  top: -4px;
 }
 .navArea .accountInfo {
   gap: 16px;

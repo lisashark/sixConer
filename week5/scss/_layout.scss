@@ -15,8 +15,20 @@
     }
 
     li>.d-block.active {
-        border-left: 4px solid $color_main;
+        position: relative;
         color: $color_main;
+
+        ::before {
+            content: "";
+            width: 4px;
+            height: 32px;
+            background-color: $color_main;
+            position: absolute;
+            left: 0;
+            top: -4px;
+            // border-left: 4px solid $color_main;
+
+        }
     }
 
     .accountInfo {
