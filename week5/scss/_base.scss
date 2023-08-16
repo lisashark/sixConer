@@ -17,3 +17,19 @@ a {
         color: $color_main
     }
 }
+
+h1 {
+    margin-right: 50px;
+
+}
+
+
+select {
+    border: none;
+    padding-right: 9px;
+
+}
+
+.layout .btnGroup button:last-child {
+    margin-left: 26px;
+}
